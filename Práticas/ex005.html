@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operadores</title>
+    <style>
+        body {
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var n1 = Number(window.prompt('Digite um número'))
+        var n2 = Number(window.prompt('Digite outro número'))
+
+        var soma = n1 + n2
+        var sub = n1 - n2
+        var mult = n1 * n2 
+        var div = n1 / n2 
+        var resto = n1 % n2
+        var pot = n1 ** n2
+
+        document.write(`As operações com os números ${n1} e ${n2} são: <br/>`)
+        document.write(`Soma: ${soma} <br/>`)
+        document.write(`Subtração: ${sub} <br/>`)
+        document.write(`Multiplicação: ${mult} <br/>`)
+        document.write(`Divisão: ${div} <br/>`)
+        document.write(`Resto: ${resto} <br/>`)
+        document.write(`Potência: ${pot} <br/>`)
+
+        var a = 5 + 3
+        var b = a % 5
+        var c = 5 * b ** 2
+        var d = 10 - a / 2
+        var e = 6 * 2 / d
+        var f = b % e + 4 / e
+
+        document.write(`Exemplos: ${a} <br/> ${b} <br/> ${c} <br/> ${d} <br/> ${e} <br/> ${f}`)
+    </script>
+</body>
+</html>
