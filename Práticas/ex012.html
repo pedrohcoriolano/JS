@@ -14,13 +14,13 @@
     </div>
     <script>
         function analisar() {
-            var nac = document.querySelector('#nac')
+            var nac = document.querySelector('#nac').value.toLowerCase()
             var res = document.querySelector('#res')
             
 
-            res.innerHTML = `<p>Seu país é: ${nac.value}</p>`
+            res.innerHTML = `<p>Seu país é: ${nac}</p>`
 
-            if (nac.value == 'Brasil' || nac.value == 'brasil') {
+            if (nac == 'brasil') {
                 res.innerHTML += '<p>Você é <strong>Brasileiro!</strong></p>'
             } else {
                 res.innerHTML += '<p>Você é <strong>Estrangeiro!</strong></p>'
