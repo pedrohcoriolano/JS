@@ -17,11 +17,11 @@
     </div>
     <script>
         function calcular() {
-            var vel = document.getElementById('txtvel')
+            var vel = document.getElementById('txtvel').value
             var res = document.querySelector('#res')
 
-            res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel.value}Km/h</strong></p>`
-            if (vel.value  > 60) {
+            res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}Km/h</strong></p>`
+            if (vel > 60) {
                 res.innerHTML += '<p>Você ultrapassou o limite estabelecido de 60Km/h, <strong>MULTADO!</strong></p>'
             } 
             res.innerHTML += '<p>Dirija sempre com Cuidado!</P'
