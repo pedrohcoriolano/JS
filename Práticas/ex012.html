@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+</head>
+<body>
+    <h1>Cidadania</h1>
+    <p><input type="text" name="nac" id="nac"> <input type="button" value="Enviar" onclick="analisar()"></p>
+    <div id="res">
+
+    </div>
+    <script>
+        function analisar() {
+            var nac = document.querySelector('#nac')
+            var res = document.querySelector('#res')
+            
+
+            res.innerHTML = `<p>Seu país é: ${nac.value}</p>`
+
+            if (nac.value == 'Brasil' || nac.value == 'brasil') {
+                res.innerHTML += '<p>Você é <strong>Brasileiro!</strong></p>'
+            } else {
+                res.innerHTML += '<p>Você é <strong>Estrangeiro!</strong></p>'
+            }
+        }
+    </script>
+</body>
+</html>
